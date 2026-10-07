@@ -1,0 +1,75 @@
+<!DOCTYPE html>  <!--Tells the browser this file is an HTML5 document-->
+<html lang="en">  <!--Starts the actual webpage and also tells the browser what language it's written in. For this case it's in English.-->
+<head>  <!--Begins the head section of the page and line 49 closes the head section.-->
+    <meta charset="UTF-8">  <!--Tells the browser what method of character encoding to use which in this case is UTF-8 which lets the page display multiple symbols and characters correctly.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--This helps the webpage display much better on different screen sizes and platforms like it display well on both phones and computers by adjusting itself to screen size. "width=device-width" used the devices current screen width and the code, "initial-scale=1.0" tells the browser to not zoom the page automatically.-->
+    <title>IS117 Course Information</title> <!--Sets the title, "IS117 Course Information" that will be displayed on the browser tab.-->                              
+
+    <style> /*This line lets the browser knwo that the batch of code written within the <style> section is in CSS. Line 48, "</style>" tells the browser that there is no more CSS code after this.*/
+        body {  /*Selects all the HTML body elements of the webpage which is usually where the stuff that the user is easily able to see on the webpage is located and applies changes to them.*/
+            margin: 0;  /*This makes the margin size 0 or basically removes it from around the outside of the webpage.*/
+            font-family: Arial, sans-serif; /*Sets the font for the webpage as "Arial, sans-serif". The browser will try to utlize Arial font first and if it can't it will use sans-serif instead.*/
+            background-color: #f4f4f4;  /*Sets the color of the background which for this value would be light gray*/
+            color: #333;    /*Sets the default text color which in this case would be dark gray.*/
+        } 
+
+        header {    /*Selects all the HTML header elements of the webpage and applies changes to them.*/
+            background-color: #222; /*Sets the color of the background which in this case would be gray.*/
+            color: white;   /*Sets the text within the header to white.*/
+            text-align: center; /*This line aligns the text within the header and centers it.*/
+            padding: 30px;  /*Sets the padding to 30 pixels of space.*/
+        }
+
+        main {  /*Selects the main section of the webpage and applies changes to it.*/
+            max-width: 800px;   /*Sets the max width meaning that the main content within the webpage cannot exceed 800 pixels.*/
+            margin: 40px auto;  /*The "auto" portion of the code helps to center the section and the rest of the code, "margin: 40px" adds 40 pixels of space both below and above the main section.*/
+            background-color: white;    /*Makes the color of the main sections background white.*/
+            padding: 30px;  /*Adds 30 pixels of space within the main section of the webpage.*/
+            border-radius: 10px;    /*Rounds all corners of the main section of the webpage with a radius of 10 pixels*/
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);  /*Adds a shadow around the box or main section where it's horizontel legnth is 0, vertical length is 2 pixels, blur radius is an 8 pixel radius, there is no spread radius since that value is 0, and the color of the shadow is set to black.*/
+        }
+
+        h2 {    /*Selects all the HTML h2 headings and applies changes to them.*/
+            color: #444;    /*Sets the color of the the text to dark gray.*/
+        }   
+
+        .course-info {  /*Sets up a controller for the "course-info" class and selects along with applying any changes to any thing within the class.*/
+            line-height: 1.8;   /*Sets the line-height or the amount of vertical space between lines of text to 1.8.*/
+            font-size: 18px;    /*Makes the size of the text 18 pixels large.*/
+        }
+
+        footer {    /*Selects the footer element of the webpage and applies changes to anything within it.*/
+            background-color: #222; /*Sets the color of background of the footer to dark gray.*/
+            color: white;   /*Sets all the text within the footer of the webpage to white.*/
+            text-align: center; /*Aligns the text within the footer and centers it.*/
+            padding: 20px;  /*Adds 20 pixels of space within the footer section of the webpage.*/
+            margin-top: 40px;   /*Adds 40 pixels of space between both footer and main sections of the webpage.*/
+        }
+    </style>    <!--Used to showcase there is no more CSS code after this line and ends the CSS section and portion of code within the file.-->
+</head> <!--Ends the head section of the webpage.-->
+
+<body>  <!--Starts the body portion of the webpage.-->  
+
+    <header>    <!--Creates the header portion of the webpage within the body.-->
+        <h1>Intro to Website Development</h1>   <!--Uses the largest size of heading font and displays the text, "Intro to Website Development".-->
+        <p>IS117 - Section 001</p>  <!--Creates a new paragraph within the body that displays the text, "IS117 - Section 001".-->
+    </header>   <!--Ends the header section of the webpage.-->
+
+    <main>  <!--Starts the main content portion of the webpage.-->
+        <h2>Student Information</h2>    <!--Uses the second largest heading font size and creates a heading while displaying the text, "Student Information".-->
+
+        <div class="course-info">   <!--Creates a section of content that is invisible to the user and doesn't change the look of the webpage while also declaring the "course-info" class.-->
+            <p><strong>Username:</strong> Dominick0927</p>  <!--Creates a paragraph section for the webpage that displays the text, "Username: bold" while bolding only the text, "Username:".-->
+            <p><strong>Course Name:</strong> Intro to Website Development</p>   <!--Creates a paragraph section for the webpage that bolds the text, "Course Name:" and displays the text, "Course Name: Intro to Website Development".-->
+            <p><strong>Course Number:</strong> IS117</p>    <!--Creates a paragraph section for the webpage that bolds the text, "Course Number:" and displays the text, "Course Number: IS117".-->
+            <p><strong>Section:</strong> 001</p>    <!--Creates a paragraph section for the webpage that bolds the text, "Section:" and displays the text, "Section: 001".-->
+        </div> <!--Ends the <div> section that contains all the information listed above from lines 62-65.-->
+    </main> <!--Ends the main content section of the webpage.-->
+
+    <footer>    <!--Starts the footer section of the webpage.-->
+        <p>&copy; 2026 Dominick Rivera</p>  <!--Creates a paragraph within the webpage that displays, "2026 Dominick Rivera". The code, "&copy" is used to create and display the copyright symbol in the webpage.-->
+        <p>Due Date: 10/06/2026</p> <!--Creates a paragraph that displays the text, "Due Date: 10/06/2026" within the footer of the webpage.-->
+    </footer>   <!--Ends the footer section of the webpage.-->
+
+</body> <!--Ends the general body section of the webpage.-->
+</html> <!--Ends the entire HTML document.-->
